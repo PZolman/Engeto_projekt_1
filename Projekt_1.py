@@ -1,6 +1,6 @@
-Oddelovac1 = ("=" * 30)
-Oddelovac2 = ("=" * 50)
-Oddelovac3 = ("=" * 40)
+oddelovac1 = ("=" * 30)
+oddelovac2 = ("=" * 50)
+oddelovac3 = ("=" * 40)
 
 # 1.Privitani uzivatele
 print(Oddelovac1)
