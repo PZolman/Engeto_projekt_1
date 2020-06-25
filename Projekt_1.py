@@ -3,9 +3,9 @@ oddelovac2 = ("=" * 50)
 oddelovac3 = ("=" * 40)
 
 # 1.Privitani uzivatele
-print(Oddelovac1)
+print(oddelovac1)
 print("Welcome to Text Analyzer")
-print(Oddelovac1)
+print(oddelovac1)
 
 name_pass = { "bob" : "123", "ann" : "pass123", "mike" : "password", "liz" : "pass123"}
 
@@ -24,9 +24,9 @@ print(f"Your user name is: {user_name}")
 print(f"Your pasword is: '***' ")
 
 # 4.vyber Textu
-print(Oddelovac2)
+print(oddelovac2)
 print("You can choose from three texts: " "1","2","3" )
-print(Oddelovac2)
+print(oddelovac2)
 
 TEXTS = ['''
 Situated about 10 miles west of Kemmerer, 
@@ -62,27 +62,27 @@ garpike and stingray are also present.''']
 # 4a.vypsani odstavcu
 for Y in TEXTS:
     print(Y)
-print(Oddelovac2)
+print(oddelovac2)
 
 # 4b. vyber textu uzivatelem
 vybrany_odstavec = int(input("Please choose your text 1, 2, 3: "))
-print(Oddelovac2)
+print(oddelovac2)
 if vybrany_odstavec > 3:
     print("You choosed wrong text")
     exit()
 else:
     vybrany_odstavec = TEXTS[vybrany_odstavec - 1]
     print(f'You choosed text: {vybrany_odstavec}')
-    print(Oddelovac2)
+    print(oddelovac2)
 
 rozdeleni = vybrany_odstavec.split()
 vycistena_slova = [slovo.strip("., ") for slovo in rozdeleni]  # list comprehension
 
 # 5. Statistiky
 
-print(Oddelovac3)
+print(oddelovac3)
 print(f"There are {(len(vycistena_slova))} words in the selected text." )
-print(Oddelovac3)
+print(oddelovac3)
 
 pocet_slov_zacinajici_velkym_pismen = 0
 pocet_slov_velkym_pismem = 0
@@ -100,13 +100,13 @@ for x in vycistena_slova:
         pocet_cifer += 1
 
 print(f"There are {pocet_slov_zacinajici_velkym_pismen} titlecase words.")
-print(Oddelovac1)
+print(oddelovac1)
 print(f"There are {pocet_slov_velkym_pismem} uppercase words.")
-print(Oddelovac1)
+print(oddelovac1)
 print(f"There are {pocet_slov_malym_pismem} lowercase words.")
-print(Oddelovac1)
+print(oddelovac1)
 print(f"There are {pocet_cifer} numeric strings.")
-print(Oddelovac1)
+print(oddelovac1)
 
 #6. Sloupcový graf
 
@@ -119,16 +119,16 @@ for i in nejcastejsi:
     print(i, slovo.get(i) * "*", slovo.get(i), "x")
 
 #7. Součet všech čisel
-print(Oddelovac2)
+print(oddelovac2)
 soucet_cisel=[]
 
 for i in vycistena_slova:
     if i .isnumeric():
         soucet_cisel.append(int(i))
 print(f"If we summed all the numbers in this text we would get: {sum(soucet_cisel)}.")
-print(Oddelovac2)
+print(oddelovac2)
 print("Thank you for using Text Analyzer.")
-print(Oddelovac2)
+print(oddelovac2)
 
 
 
