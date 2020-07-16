@@ -2,7 +2,7 @@ oddelovac1 = ("=" * 30)
 oddelovac2 = ("=" * 50)
 oddelovac3 = ("=" * 40)
 
-# 1.Privitani uzivatele
+# 1. Privitani uzivatele
 print(oddelovac1)
 print("Welcome to Text Analyzer")
 print(oddelovac1)
@@ -28,7 +28,7 @@ else:
 print(f"Your username: {username}")
 print(f"Your pasword:", (len(password) * "*"))
 
-# 4.vyber Textu
+# 4. Vyber Textu
 print(oddelovac2)
 print("You can choose from following texts:")
 print(oddelovac2)
@@ -64,12 +64,12 @@ other freshwater genera and herring similar to those
 in modern oceans. Other fish such as paddlefish, 
 garpike and stingray are also present.''']
 
-# 4a.vypsani odstavcu
+# 4a. Vypsani odstavcu
 for i in TEXTS:
     print(i)
 print(oddelovac2)
 
-# 4b. vyber textu uzivatelem
+# 4b.Vyber textu uzivatelem
 vybrany_odstavec = int(input("Please choose from" + " " + str(len(TEXTS)) + " " + "texts: "))
 print(oddelovac2)
 if vybrany_odstavec < 1 or vybrany_odstavec > int(len(TEXTS)):
@@ -80,7 +80,7 @@ else:
     print(f'You choosed text: {vybrany_odstavec}')
     #print(oddelovac2)
 
-# uprava textu
+## Uprava textu
 rozdeleni = vybrany_odstavec.split()
 vycistena_slova = [i.strip("., ") for i in rozdeleni]  # list comprehension
 
@@ -119,7 +119,7 @@ print(oddelovac1)
 print(f"There are {pocet_cifer} numeric strings.")
 print(oddelovac1)
 
-#6 Sloupcový graf
+#6. Sloupcový graf
 vybrana = sorted(delka_slov, reverse=True)
 for i in vybrana:
     print(i, delka_slov.get(i) * "*", delka_slov.get(i), "x")
