@@ -14,7 +14,7 @@ data = {
     "liz" : "pass123",
         }
 
-# 2. Vyzadani prihlasovacich udaji a hesla
+# 2. Vyzadani prihlasovacich udaju a hesla
 username = input("Please enter your user name: ")
 password = input("Please enter your password: ")
 
